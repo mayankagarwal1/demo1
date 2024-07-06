@@ -62,7 +62,8 @@ const Chatbot = () => {
     <div className={`chatbot ${expanded ? 'expanded' : ''}`}>
       {!expanded && (
         <div className="chatbot-icon" onClick={toggleChatbot}>
-          <img src="/chatbot-icon.svg" alt="Icon" />
+          {/* <img src='/logo192.png' alt = "not showing" /> */}
+          <img src="/chatbot-icon.svg" alt="Icon1" />
         </div>
       )}
       {expanded && (
@@ -88,7 +89,7 @@ const Chatbot = () => {
             />
             <button onClick={sendMessage}>Send</button>
             <div className="chatbot-icon" onClick={toggleChatbot}>
-          <img src="/chatbot-icon.svg" alt="Icon" />
+          <img src="/chatbot-icon.svg" alt="Icon2" />
             </div>
           </div>
         </>
