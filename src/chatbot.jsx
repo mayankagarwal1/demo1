@@ -85,7 +85,7 @@ const Chatbot = () => {
               value={inputMessage}
               onChange={(e) => setInputMessage(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Type your message here..."
+              placeholder="Type your message..."
             />
             <button onClick={sendMessage}>Send</button>
             <div className="chatbot-icon" onClick={toggleChatbot}>
