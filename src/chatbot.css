@@ -1,0 +1,165 @@
+/* src/Chatbot.css */
+
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.chatbot.expanded{
+  width: 315px;
+}
+.chatbot:not(.expanded) {
+  width: 30px; /* Collapsed width */
+  height: 30px;
+  border-radius: 50%;
+  align-items: center; /* Center align items */
+  justify-content: center; /* Center justify content */
+}
+.chatbot-messages {
+  
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
+.message {
+  background-color: #f0f0f0;
+  padding: 4px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+input[type="text"],
+button {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Adjusted styles for chatbot icon */
+.chatbot-icon {
+  
+  bottom: 10px;
+  right: 10px;
+  width: 70px; /* Adjust the size as needed */
+  height: 70px; /* Adjust the size as needed */
+  cursor: pointer;
+  border-radius: 50%; /* Makes the icon circular */
+  background-color: white; /* Background color for the circular icon */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.chatbot-icon img {
+  width: 75%; /* Adjust the icon size within the circular container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Ensure the image inside the circle remains circular */
+}
+
+/* chatbot.css */
+
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px; /* Adjusted width for collapsed state */
+  height: 70px; /* Adjusted height for collapsed state */
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50%; /* Ensures it's a circle */
+  padding: 0; /* No padding for the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: width 0.3s ease; /* Optional: Add transition for smooth width change */
+}
+
+.chatbot.expanded {
+  width: 315px; /* Expanded width */
+  height: auto; /* Adjusted height for expanded state */
+  border-radius: 8px; /* Adjusted border radius for expanded state */
+  padding: 16px; /* Padding for expanded state */
+}
+
+.chatbot-messages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 16px;
+}
+
+.message {
+  background-color: #f0f0f0;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  width: 300px;
+}
+
+input[type="text"],
+button {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.chatbot-input {
+  display: flex;
+  align-items: center;
+}
+
+.chatbot-input input[type="text"] {
+  flex: 1; /* Take remaining space */
+}
+
+.chatbot-input button {
+  margin-left: 8px; /* Adjust spacing */
+}
+
+.chatbot-header {
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-right: 100px;
+}
+
+.chatbot-icon img {
+  width: 75%; /* Adjust the icon size within the circular container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Ensure the image inside the circle remains circular */
+}
+
+
+/* Styles for chatbot icon */
+.chatbot-icon img {
+  width: 100%; /* Ensure the icon fills its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Ensure the image inside the circle remains circular */
+}
